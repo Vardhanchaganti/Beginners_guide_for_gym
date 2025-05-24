@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("/images/eddiehall_bg.webp");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-attachment: fixed;
+    font-family: itim;
+}
+.header{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding:0px;
+}
+.header ul{
+    list-style: none;
+    padding:0;
+    display: flex;
+    gap: 4vw;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.header li{
+    display: inline;
+    position: relative;
+    width: max-content;
+}
+container{
+    width: 95vw;
+    height:90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:20vw;
+}
+.quote{
+    width: 40vw;
+    height: 80vh;
+    padding-left: 4vw;
+    font-family: "Permanent Marker";
+    font-size: x-large;
+    /* color: #fca311; */
+    color: #FFD700;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.muscle-groups{
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: large;
+}
+.muscle-groups ul{
+    list-style-type: none;
+}
+.muscle-groups li{
+    margin: 5vh;
+    padding: 1vw 8vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10vw;
+}
+.muscle-groups li::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height:100%;
+    border: 2px solid white;
+    border-radius: 10vw;
+}
+.muscle-groups a{
+    text-decoration: none;
+    color:white;
+    font-size: larger;
+    font-family: abril;
+    position: relative;
+    z-index: 2;
+    transition: color 300ms ease-in-out;
+}
+
+.muscle-groups li::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width:0px;
+    border-radius: 10vw;
+    background: linear-gradient(to right, red,blue);
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: 150ms ease-in-out;
+    color:black
+}
+.muscle-groups li:hover::after{
+    width:100%; 
+}
+.muscle-groups li:hover a{
+   color: black;
+} 
